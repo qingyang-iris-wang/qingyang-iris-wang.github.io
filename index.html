@@ -25,8 +25,9 @@
     h2 { font-size: 28px; margin: 0 0 24px; }
     main { padding-top: 8px; }
     p { margin: 0 0 22px; }
-    .links { display: flex; justify-content: center; align-items: center;
-      gap: 18px; margin-top: 16px; font: 18px/1.6 system-ui, sans-serif; }
+    .links { display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+      gap: 8px 12px; margin-top: 16px; font: 18px/1.6 system-ui, sans-serif; }
+    .links a { white-space: nowrap; }
     .email { margin: 14px 0 0; font: 15px/1.6 system-ui, sans-serif; overflow-wrap: anywhere; }
     .separator { color: #a2a8ac; }
     a { color: #043361; text-underline-offset: 4px; }
@@ -50,9 +51,11 @@
       <div class="portrait"><img src="assets/photo.jpg" alt="Qingyang (Iris) Wang" width="1400" height="1082" fetchpriority="high"></div>
       <h1>Qingyang (Iris) Wang</h1>
       <div class="links" aria-label="Profile links">
+        <a href="https://www.dropbox.com/scl/fi/1putzf0q9fbre4e9n21j5/Qingyang-Iris-Wang_CV.pdf?rlkey=elulzgdnhk7jfu559tkhe5ee6&amp;st=sgxpf6s1&amp;dl=0" rel="nofollow noreferrer" aria-label="View CV on Dropbox (PDF)">CV</a>
+        <span class="separator" aria-hidden="true">·</span>
         <a href="https://www.linkedin.com/in/iriswangqy/" rel="nofollow noreferrer">LinkedIn</a>
         <span class="separator" aria-hidden="true">·</span>
-        <a href="https://www.dropbox.com/scl/fi/1putzf0q9fbre4e9n21j5/Qingyang-Iris-Wang_CV.pdf?rlkey=elulzgdnhk7jfu559tkhe5ee6&amp;st=sgxpf6s1&amp;dl=0" rel="nofollow noreferrer" aria-label="View CV on Dropbox (PDF)">CV</a>
+        <a href="https://scholar.google.com/citations?user=JlpgYYMAAAAJ&amp;hl=en" rel="nofollow noreferrer">Google Scholar</a>
       </div>
       <p class="email">iris [dot] wang [at] yale [dot] edu</p>
     </header>
