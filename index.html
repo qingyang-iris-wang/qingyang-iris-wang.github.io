@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- Simplified from Minimal Light by Yaoyao Liu (CC0 1.0):
+     https://github.com/yaoyao-liu/minimal-light -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+  <meta name="referrer" content="no-referrer">
+  <title>Iris Wang</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: #595959;
+      font: 18px/1.7 Georgia, "Times New Roman", serif; }
+    .wrapper { width: min(860px, calc(100% - 64px)); margin: 110px auto 64px;
+      display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 76px; }
+    header { text-align: center; }
+    .portrait { width: 160px; height: 160px; margin: 0 auto 28px;
+      border-radius: 50%; background: #f1f2f2; color: #7b858b;
+      display: grid; place-items: center; font-size: 40px; font-weight: normal; }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+    h1, h2 { color: #043361; font-weight: 400; line-height: 1.2; }
+    h1 { font-size: 30px; margin: 0 0 12px; }
+    h2 { font-size: 28px; margin: 0 0 24px; }
+    .subtitle { font: 13px/1.6 system-ui, sans-serif; color: #6c7277; margin: 0; }
+    main { padding-top: 8px; }
+    p { margin: 0 0 22px; }
+    .links { border-top: 1px solid #e8e9eb; margin-top: 32px; padding-top: 23px;
+      font: 14px/1.6 system-ui, sans-serif; }
+    .pending { color: #6c7277; }
+    a { color: #043361; text-underline-offset: 4px; }
+    a:hover { color: #006699; }
+    a:focus-visible { outline: 2px solid #043361; outline-offset: 5px; }
+    @media (max-width: 640px) {
+      .wrapper { width: min(480px, calc(100% - 40px)); margin-top: 48px;
+        grid-template-columns: 1fr; gap: 46px; }
+      main { padding-top: 0; }
+      .portrait { width: 136px; height: 136px; margin-bottom: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <!-- Replace the initials with <img src="assets/photo.jpg" alt="Iris Wang"> when a photo is supplied. -->
+      <div class="portrait" role="img" aria-label="IW initials; profile photo coming soon">IW</div>
+      <h1>Iris Wang</h1>
+      <p class="subtitle">Personal website</p>
+    </header>
+    <main>
+      <h2>About me</h2>
+      <!-- Replace these paragraphs with your introduction. -->
+      <p>Hello, I'm Iris. Welcome to my personal website.</p>
+      <p>A short introduction is coming soon.</p>
+      <div class="links">
+        <!-- Replace the span with:
+        <a href="GOOGLE_DOC_SHARING_URL" rel="nofollow noreferrer">View CV</a>
+        Use Share → Anyone with the link → Viewer in Google Docs. -->
+        <span class="pending">CV · Coming soon</span>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+
