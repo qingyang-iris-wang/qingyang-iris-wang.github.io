@@ -15,10 +15,10 @@
     .wrapper { width: min(940px, calc(100% - 64px)); margin: 90px auto 64px;
       display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 64px; }
     header { text-align: center; }
-    .portrait { width: 240px; height: 300px; margin: 0 auto 28px;
-      border-radius: 0; background: #f1f2f2; color: #7b858b;
-      display: grid; place-items: center; font-size: 40px; font-weight: normal; }
-    .portrait img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+    .portrait { width: min(300px, 100%); aspect-ratio: 4 / 3; margin: 0 auto 28px;
+      overflow: hidden; background: #f1f2f2; }
+    .portrait img { display: block; width: 100%; height: 100%; object-fit: cover;
+      transform: scale(1.45); transform-origin: 52% 36%; }
     h1, h2 { color: #043361; font-weight: 400; line-height: 1.2; }
     h1 { font-size: 30px; margin: 0 0 12px; }
     h2 { font-size: 28px; margin: 0 0 24px; }
@@ -34,7 +34,7 @@
       .wrapper { width: min(480px, calc(100% - 40px)); margin-top: 48px;
         grid-template-columns: 1fr; gap: 46px; }
       main { padding-top: 0; }
-      .portrait { width: min(240px, 100%); height: auto; aspect-ratio: 4 / 5; margin-bottom: 22px; }
+      .portrait { margin-bottom: 22px; }
       h1 { font-size: 28px; }
     }
   </style>
@@ -42,8 +42,7 @@
 <body>
   <div class="wrapper">
     <header>
-      <!-- Replace the initials with <img src="assets/photo.jpg" alt="Qingyang (Iris) Wang"> when a photo is supplied. -->
-      <div class="portrait" role="img" aria-label="IW initials; profile photo coming soon">IW</div>
+      <div class="portrait"><img src="assets/photo.jpg" alt="Qingyang (Iris) Wang" width="1400" height="1082" fetchpriority="high"></div>
       <h1>Qingyang (Iris) Wang</h1>
       <div class="links" aria-label="Profile links">
         <a href="https://www.linkedin.com/in/iriswangqy/" rel="nofollow noreferrer">LinkedIn</a>

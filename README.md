@@ -5,7 +5,7 @@ A minimal, single-page personal website, published by GitHub Pages from the root
 ## Personalize
 
 - Edit the introduction in `index.html`.
-- Add a photo at `assets/photo.jpg`, then replace the initials with the image markup shown in the HTML comment.
+- Replace `assets/photo.jpg` to change the headshot. The webpage displays it in a landscape frame; adjust `.portrait img` in `index.html` to change the crop.
 - The LinkedIn and CV links sit below the name in `index.html`. The CV currently opens a shared PDF on Dropbox; update its link here if the sharing URL changes.
 
 Open this repository in GitHub Desktop, review your changes, commit, then choose **Push origin**. GitHub Pages publishes updates automatically.
